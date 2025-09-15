@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4f5051;
+}
+
+.repos-container {
+  width: 100%;
+  min-height: 95vh;
+}
+
+.get-repos {
+  margin: 15px auto;
+  background-color: #ddd;
+  width: 70%;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.get-repos input::placeholder {
+  transition: 0.3s;
+}
+
+.get-repos input {
+  width: 85%;
+  height: 40px;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 999px;
+  border: none;
+  color: #000;
+  transition: 0.3s;
+  font-size: 16.5px;
+  &:hover::placeholder {
+    color: transparent;
+  }
+}
+
+.get-repos input:focus {
+  outline: 2px solid #342f2fd4;
+}
+
+.get-repos .get-button {
+  width: 15%;
+  height: 40px;
+  color: #000;
+  text-transform: capitalize;
+  background-color: #342f2fd4;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 7px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: 0.3s;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background-color: #342f2f80;
+  }
+}
+
+.get-repos .get-button i {
+  font-size:26px ;
+  margin-left: 7px;
+}
+
+/* .show-data {
+  width: 67%;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #9d9d9d;
+} */
+
+.show-data div {
+  display: block;
+  width: 67%;
+  border-radius: 8px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: #9d9d9d;
+}
+
+.classFora {
+  font-size: 16px;
+  display: block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #36373a;
+  width: fit-content;
+  transition: 0.3s;
+  &:hover {
+    background-color: #342f2f80;
+  }
+}
+
+.show-data div .name {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.show-data div .id {
+  font-size: 16px;
+  /* color: #fff; */
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #ddd;
+  padding: 0;
+  margin: 0;
+  color: #000;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .get-repos {
+    width: 82%;
+  }
+  .get-repos .get-button {
+    font-size: 14px;
+    font-size: 14px;
+    width: 40%;
+  }
+}
+
+.footer a {
+  color: #000;
+}
